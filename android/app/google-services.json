@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "646827772991",
+    "project_id": "rndemo-18fd3",
+    "storage_bucket": "rndemo-18fd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646827772991:android:93b9f2db8c99bb76a33c8a",
+        "android_client_info": {
+          "package_name": "com.carocodes.rndemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646827772991-fqpsaakntih417iomomuluhg4rg7kt6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjGtFXhPP26U5wya505bLUELt-1AQpaoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646827772991-fqpsaakntih417iomomuluhg4rg7kt6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
