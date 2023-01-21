@@ -1,4 +1,4 @@
-package com.rndemo;
+package com.carocodes.rndemo;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
