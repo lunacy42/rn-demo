@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 import {View, Text, Button, TextInput, StyleSheet} from 'react-native';
-import {login} from '../helpers/auth';
-import {NavigationContext} from '@react-navigation/native';
+import {createUser, login} from '../helpers/auth';
+import Navigation from '../Navigation';
 
-const LoginScreen: React.FC = () => {
+const RegistrationScreen: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  const navigation = React.useContext(NavigationContext);
 
   const onChangeEmail = (value: string) => {
     setEmail(value);
@@ -16,17 +15,13 @@ const LoginScreen: React.FC = () => {
     setPassword(value);
   };
 
-  const onPressLogin = () => {
-    login(email, password);
-  };
-
   const onPressRegistration = () => {
-    navigation.navigate('Registration');
+    createUser(email, password);
   };
 
   return (
     <View>
-      <Text>Login</Text>
+      <Text>Registration</Text>
       <TextInput
         style={styles.input}
         onChangeText={onChangeEmail}
@@ -41,8 +36,8 @@ const LoginScreen: React.FC = () => {
         secureTextEntry
       />
       <Button
-        onPress={onPressLogin}
-        title="Login"
+        onPress={onPressRegistration}
+        title="Registration"
         color="#841584"
         accessibilityLabel="Login Button"
       />
@@ -71,4 +66,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginScreen;
+export default RegistrationScreen;
