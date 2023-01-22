@@ -1,11 +1,11 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import Navigation from './Navigation';
+import UserCheck from './UserCheck';
 
 function App(): JSX.Element {
   return (
     <NavigationContainer>
-      <Navigation />
+      <UserCheck />
     </NavigationContainer>
   );
 }

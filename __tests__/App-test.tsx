@@ -12,8 +12,8 @@ import {NavigationContainer} from '@react-navigation/native';
 it('renders correctly', async () => {
   const {getByText} = render(
     <NavigationContainer>
-      <Navigation />
+      <Navigation user={null} />
     </NavigationContainer>,
   );
-  await waitFor(() => getByText('Hello'));
+  await waitFor(() => getByText('Login'));
 });

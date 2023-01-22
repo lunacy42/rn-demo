@@ -1,14 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
+import auth from '@react-native-firebase/auth';
 
 const Stack = createNativeStackNavigator();
 
-const Navigation: React.FC = () => {
-  const [loggedIn, setLoggedIn] = useState(true);
+export type Props = {
+  user: any;
+};
+
+const Navigation: React.FC<Props> = ({user}) => {
   const getStack = () =>
-    loggedIn ? (
+    user ? (
       <Stack.Screen
         name="Home"
         component={HomeScreen}
