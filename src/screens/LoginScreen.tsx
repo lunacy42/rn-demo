@@ -21,11 +21,11 @@ const LoginScreen: React.FC = () => {
   };
 
   const onPressRegistration = () => {
-    navigation.navigate('Registration');
+    navigation?.navigate('Registration');
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Login</Text>
       <TextInput
         style={styles.input}
